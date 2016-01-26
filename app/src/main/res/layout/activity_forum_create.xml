@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:apps="http://schemas.android.com/apk/res-auto"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="13dp"
+                android:background="@null"
+                android:hint="请输入帖子标题（1-20个字）"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/gray_47"
+                android:textSize="@dimen/text_size_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/gray_94" />
+
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:background="@null"
+                android:gravity="top|left"
+                android:hint="请输入帖子内容（至少10个字）"
+                android:minHeight="150dp"
+                android:textColor="@color/gray_47"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/gray_94" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.aosijia.dragonbutler.imagegroup.ImageGroupView
+                    android:id="@+id/igv_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="19dp"
+                    apps:addButtonDrawable="@drawable/common_add_image_selector"
+                    apps:childMargin="19dp"
+                    apps:column="3"
+                    apps:deleteDrawable="@drawable/common_add_image_delete"
+                    apps:imagePlaceholderDrawable="@mipmap/ic_launcher"
+                    apps:maxImageNum="5"
+                    apps:showAddButton="true">
+
+                </com.aosijia.dragonbutler.imagegroup.ImageGroupView>
+
+                <TextView
+                    android:id="@+id/tv_hintText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="最多添加5张照片"
+                    android:textColor="#b4b4b4"
+                    android:textSize="@dimen/text_size_16" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

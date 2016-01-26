@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:apps="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/gray_47"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="14dp">
+
+        <ImageView
+            android:id="@+id/iv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_forum_type_event" />
+
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_status_under_way"
+            android:layout_marginLeft="11dp"/>
+
+        <TextView
+            android:id="@+id/tv_participants_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="已有人参与"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/gray_94"/>
+    </LinearLayout>
+
+
+    <com.aosijia.dragonbutler.imagegroup.ImageGroupView
+        android:id="@+id/igv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="14dp"
+        apps:childMargin="120dp"
+        apps:column="3"
+        apps:imagePlaceholderDrawable="@mipmap/ic_launcher"
+        apps:maxImageNum="3"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:id="@+id/tv_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="999+"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/gray_94"
+            android:drawableLeft="@drawable/common_comment_normal"
+            android:drawablePadding="3dp"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="2015-12-08 11:20"
+            android:layout_toLeftOf="@id/tv_comment_count"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/gray_94"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="哈哈"
+            android:layout_toLeftOf="@id/tv_time"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/gray_47"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="14dp"/>
+
+</LinearLayout>

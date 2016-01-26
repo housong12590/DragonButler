@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/itemTypeImageView"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/common_circle_completed" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:layout_toLeftOf="@+id/arrow_right"
+        android:layout_toRightOf="@+id/itemTypeImageView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/itemTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="小区公告标题小区公"
+            android:textColor="@color/gray_47"
+            android:textSize="@dimen/text_size_16" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp">
+
+            <TextView
+                android:id="@+id/itemType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/itemDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="2015-15-05   10：00"
+                android:textColor="@color/gray_94"
+                android:textSize="@dimen/text_size_15" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/common_arrow_right" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/itemTypeImageView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/gray_94" />
+
+</RelativeLayout>

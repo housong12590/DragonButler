@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:apps="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical"
+              android:paddingRight="12dp"
+              android:paddingLeft="12dp"
+              android:paddingTop="12dp"
+              >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <com.aosijia.dragonbutler.ui.widget.CircleImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="@dimen/common_list_avatar_width"
+            android:layout_height="@dimen/common_list_avatar_height"
+            app:civ_border_color="#ffffffff"
+            android:src="@drawable/avatar_default"
+            app:civ_border_width="0dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp">
+
+                    <ImageView
+                        android:id="@+id/statusImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/ic_launcher"/>
+
+                    <TextView
+                        android:id="@+id/dateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="2015-12-05 11:20"
+                        android:textColor="@color/gray_94"
+                        android:textSize="@dimen/text_size_14"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="小二郎小二郎小二郎小二郎小二郎小二郎小二郎"
+                        android:maxLength="10"
+                        android:textColor="@color/gray_47"
+                        android:textSize="@dimen/text_size_14"/>
+
+                    <TextView
+                        android:id="@+id/contentTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:singleLine="true"
+                        android:text="100%纯羊毛全新的100%纯羊毛全新的100%纯羊毛全新的100%纯羊毛全新的"
+                        android:textColor="@color/gray_47"
+                        android:textSize="@dimen/text_size_14"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <com.aosijia.dragonbutler.imagegroup.ImageGroupView
+        android:id="@+id/igv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="53dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        apps:childMargin="120dp"
+        apps:column="3"
+        apps:imagePlaceholderDrawable="@mipmap/ic_launcher"
+        apps:maxImageNum="3"
+         />
+
+
+
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="8dp"
+        android:text="500"
+        android:textColor="#f75a78"
+        android:textSize="@dimen/text_size_16"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="4dp"
+        android:background="#979797"/>
+
+</LinearLayout>

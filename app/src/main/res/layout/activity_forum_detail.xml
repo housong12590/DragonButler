@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true">
+
+            <include
+                android:id="@+id/layout_comment"
+                layout="@layout/include_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <com.aosijia.dragonbutler.ui.widget.pulllistview.PullToRefreshScrollView
+            android:id="@+id/prsv_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_comment"
+            android:background="@color/white">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.aosijia.dragonbutler.ui.widget.CircleImageView
+                        android:id="@+id/civ_avatar"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_marginLeft="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_nickName"
+                            style="@style/text_style_14" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            style="@style/text_style_14"
+                            android:layout_marginTop="5dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View style="@style/divider_style" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/text_style_16"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="标题" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    style="@style/text_style_14"
+                    android:layout_margin="12dp"
+                    android:text="内容" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_margin="7dp"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@color/gray_ec" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_style_14"
+                        android:text="评论" />
+
+                    <TextView
+                        android:id="@+id/tv_repliesCount"
+                        style="@style/text_style_14"
+                        android:layout_marginLeft="4dp" />
+                </LinearLayout>
+
+                <View style="@style/divider_style" />
+
+                <com.aosijia.dragonbutler.ui.widget.list.NoScrollListView
+                    android:id="@+id/sv_noScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:divider="@color/gray_94"
+                    android:dividerHeight="1px"
+                    android:listSelector="@android:color/transparent"/>
+
+
+            </LinearLayout>
+        </com.aosijia.dragonbutler.ui.widget.pulllistview.PullToRefreshScrollView>
+
+
+    </RelativeLayout>
+</LinearLayout>

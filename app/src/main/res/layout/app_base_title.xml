@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_parentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/title_lefttextview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="左侧文字"
+        android:paddingLeft="@dimen/title_button_padding"
+        android:paddingRight="@dimen/title_button_padding"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_14"
+        android:visibility="gone"
+        android:background="@drawable/bg_common_button_selector"
+        />
+
+    <ImageView
+        android:id="@+id/title_leftimageview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/title_button_padding"
+        android:paddingRight="@dimen/title_button_padding"
+        android:src="@drawable/btn_back"
+        android:visibility="visible"
+        android:background="@drawable/bg_common_button_selector"/>
+
+    <TextView
+        android:id="@+id/title_centertextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_18" />
+
+    <ImageView
+        android:id="@+id/title_centerimageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_righttextview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_14"
+        android:paddingLeft="@dimen/title_button_padding"
+        android:paddingRight="@dimen/title_button_padding"
+        android:text="取消"
+        android:visibility="gone"
+        android:background="@drawable/bg_common_button_selector"/>
+
+    <ImageView
+        android:id="@+id/title_rightimageview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:paddingLeft="@dimen/title_button_padding"
+        android:paddingRight="@dimen/title_button_padding"
+        android:background="@drawable/bg_common_button_selector"/>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textview_tabbar_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:drawableTop="@drawable/maintab_convenience_selector"
+        android:gravity="center_horizontal"
+        android:text="便民"
+        android:textColor="@color/tabhost_text_selector"
+        android:textSize="@dimen/text_size_12"
+        android:layout_marginTop="9dp"/>
+
+    <TextView
+        android:id="@+id/textview_tabbar_item_pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical"
+        android:background="@drawable/bg_red_bubble"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:layout_toRightOf="@+id/textview_tabbar_item"
+        android:layout_alignTop="@+id/textview_tabbar_item"
+        android:layout_marginLeft="-5.6dp"
+        android:layout_marginTop="-5.6dp"/>
+
+</RelativeLayout>

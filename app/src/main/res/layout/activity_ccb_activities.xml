@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+    <include layout="@layout/app_base_title" />
+
+    <com.aosijia.dragonbutler.ui.widget.pulllistview.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/prlv_listview"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        ptr:ptrDrawable="@drawable/dialog_animation"
+        android:headerDividersEnabled="false"
+        ptr:ptrMode="both"
+        android:divider="@android:color/transparent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+</LinearLayout>

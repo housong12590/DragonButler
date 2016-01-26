@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="83dp"
+        android:layout_centerVertical="true"
+        android:layout_height="83dp"
+        android:layout_marginLeft="18dp"
+        android:scaleType="fitXY" />
+
+
+   <LinearLayout
+       android:id="@+id/ll_layout"
+       android:layout_width="wrap_content"
+       android:orientation="vertical"
+       android:layout_toRightOf="@id/iv_pic"
+       android:layout_margin="11dp"
+       android:layout_centerVertical="true"
+       android:layout_height="83dp">
+       <TextView
+           android:id="@+id/tv_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:layout_weight="1"
+           android:singleLine="true"
+           android:text="五常大米稻花香米5KG"
+           android:textColor="@color/gray_47"
+           android:textSize="@dimen/text_size_16" />
+
+       <TextView
+           android:id="@+id/tv_price"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="5dp"
+           android:text="￥99.50"
+           android:textColor="@color/pink"
+           android:textSize="@dimen/text_size_16" />
+   </LinearLayout>
+    <View
+        style="@style/divider_style"
+        android:layout_below="@id/ll_layout" />
+</RelativeLayout>

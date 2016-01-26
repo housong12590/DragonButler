@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="white_color">#ffffff</drawable>
+
+    <color name="colorPrimary">#2667B5</color>
+    <color name="colorPrimaryDark">#2667B5</color>
+    <color name="colorAccent">#2667B5</color>
+    <color name="colorMeTitle">#0669b4</color>
+
+    <color name="content_backgroud">#e8e8e8</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray_ec">#ECECEC</color>
+    <color name="gray_47">#474747</color>
+    <color name="gray_translucent">#7f474747</color>
+    <color name="gray_e9">#E9E9E9</color>
+    <color name="gray_94">#949494</color>
+    <color name="green">#67c681</color>
+    <color name="blue">#4ba9e9</color>
+    <color name="brown">#e59a73</color>
+    <color name="pink">#fc6472</color>
+    <color name="blue_04">#0468b4</color>>
+
+
+
+    <color name="image_group_background_color">#DDDDDD</color>
+    <color name="image_group_button_disable">@color/button_disable</color>
+
+    <color name="button_disable">#CBCBCB</color>
+    <color name="color_D80C18">#D80C18</color><!--主色-->
+    <color name="image_group_text_color_hint">#CCCCCC</color>
+    <color name="image_group_popup_bg">#44000000</color>
+    <color name="image_group_image_bg">#dcdcdc</color>
+
+    <drawable name="maintab_item_click_color">#cccccc</drawable>
+    <color name="common_divider">#949494</color>
+
+
+
+
+</resources>

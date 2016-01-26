@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_popupwindow"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/popou_margin">
+
+        <TextView
+            android:id="@+id/tv_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发布帖子"
+            android:drawableLeft="@drawable/ic_forum_topic"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/white"
+            android:padding="14dp"
+            android:drawablePadding="14dp"/>
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+
+        <TextView
+            android:id="@+id/tv_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发起活动"
+            android:drawableLeft="@drawable/ic_forum_topic"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/white"
+            android:padding="14dp"
+            android:drawablePadding="14dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+
+        <TextView
+            android:id="@+id/tv_vote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发起投票"
+            android:drawableLeft="@drawable/ic_forum_topic"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/white"
+            android:padding="14dp"
+            android:drawablePadding="14dp"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

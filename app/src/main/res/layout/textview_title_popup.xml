@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="发布帖子"
+          android:gravity="center"
+    android:drawableLeft="@drawable/ic_forum_topic"
+    android:textSize="@dimen/text_size_14"
+    android:textColor="@color/white"
+    android:paddingTop="@dimen/popou_margin"
+    android:paddingBottom="@dimen/popou_margin"
+    android:paddingLeft="5dp"
+    android:singleLine="true">
+
+</TextView>

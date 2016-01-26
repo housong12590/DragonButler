@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rootLayout"
+    style="@style/immersion_status"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    >
+
+    <!--<include layout="@layout/app_base_title"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/content_backgroud"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/realtabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/gray_94"
+            android:layout_height="1px">
+
+        </View>
+        <com.aosijia.dragonbutler.ui.widget.CustomFragmentTabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0" />
+        </com.aosijia.dragonbutler.ui.widget.CustomFragmentTabHost>
+    </LinearLayout>
+</LinearLayout>

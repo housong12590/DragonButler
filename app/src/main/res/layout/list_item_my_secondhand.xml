@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:apps="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    >
+
+
+
+    <TextView
+        android:id="@+id/contentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="二手标题"
+        android:textColor="@color/gray_47"
+        android:textSize="@dimen/text_size_14"
+        android:drawableLeft="@drawable/ic_secondhand_type_buy"
+        android:gravity="center_vertical"
+        android:drawablePadding="12dp"
+        android:layout_marginTop="12dp"/>
+
+
+    <com.aosijia.dragonbutler.imagegroup.ImageGroupView
+        android:id="@+id/igv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        apps:childMargin="120dp"
+        apps:column="3"
+        apps:imagePlaceholderDrawable="@mipmap/ic_launcher"
+        apps:maxImageNum="3"
+        android:layout_below="@id/contentTextView"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/igv_pic"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:text="500"
+            android:textColor="#f75a78"
+            android:textSize="@dimen/text_size_16" />
+
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-12-05 11:20"
+            android:textColor="@color/gray_94"
+            android:textSize="@dimen/text_size_14"
+            android:layout_weight="1.0"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/statusImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_secondhand_complete"
+        android:layout_alignParentRight="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="4dp"
+        android:background="#979797"
+        android:layout_below="@id/layout_price" />
+
+</RelativeLayout>

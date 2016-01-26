@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:foreground="?attr/selectableItemBackground">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@android:id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+        fresco:placeholderImageScaleType="centerCrop"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_margin="@dimen/image_group_default_padding"
+        android:src="@drawable/selected_image_check_box"
+        />
+
+</FrameLayout>

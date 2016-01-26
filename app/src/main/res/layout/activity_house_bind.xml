@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/immersion_status"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/app_base_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/content_backgroud"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="22dp"
+            android:text="您尚未绑定房屋，请先绑定"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15"/>
+
+        <EditText
+            android:id="@+id/houseHoldCodeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            android:gravity="center|left"
+            android:hint="请输入10位房屋验证码"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingLeft="28dp"
+            android:textSize="@dimen/text_size_15"/>
+
+        <Button
+            android:id="@+id/houseHoldBindButton"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/btn_login_selector"
+            android:text="绑定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_15"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="38dp"
+            android:text="1     什么是房屋验证码？\n       房屋验证码是用来验证用户身份的标识"
+            android:textColor="#949494"
+            android:textSize="@dimen/text_size_15"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="13dp"
+            android:text="2    房屋验证码怎么获取？\n       验证码由物业统一发放"
+            android:textColor="#949494"
+            android:textSize="@dimen/text_size_15"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

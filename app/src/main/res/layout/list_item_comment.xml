@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="11dp"
+    android:paddingBottom="13dp">
+
+    <com.aosijia.dragonbutler.ui.widget.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="@dimen/common_avatar_size"
+        android:layout_height="@dimen/common_avatar_size"
+        android:src="@drawable/avatar_default"
+        app:civ_border_color="#ffffffff"
+        app:civ_border_width="0dp"
+        android:layout_marginLeft="14dp"
+       />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:text="昵称"
+        android:textColor="@color/gray_47"
+        android:textSize="@dimen/text_size_12"
+        />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_nickname"
+        android:layout_below="@id/tv_nickname"
+        android:layout_marginTop="6dp"
+        android:text="2015-09-09 12:00"
+        android:textColor="@color/gray_94"
+        android:textSize="@dimen/text_size_12" />
+
+
+    <ImageView
+        android:id="@+id/iv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/btn_comment_selector"
+        android:layout_marginRight="20dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_nickname"
+        android:layout_below="@id/tv_time"
+        android:layout_marginTop="11dp"
+        android:text="评论内容"
+        android:textColor="@color/gray_47"
+        android:textSize="@dimen/text_size_14"
+        android:layout_marginRight="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignLeft="@id/tv_comment"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/tv_comment"/>
+
+
+</RelativeLayout>
